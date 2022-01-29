@@ -11,7 +11,6 @@ A empresa obteve bons retornos com a estratégia anterior de comprar apartamento
 
 Como cientistas de dados responsáveis por solucionar este problema, a melhor solução para uma segunda iteração do projeto é desenvolver um modelo de precificação.
 
-
 # Planejamento
 
 ## Proposta
@@ -23,7 +22,17 @@ Assim, a equipe poderá identificar boas oportunidades de imóveis que estão ab
 
 ## Utilização do Modelo
 A equipe de pesquisa de imóveis podera consultar o modelo via API. Assim a equipe irá passar um vetor de características (ou uma matriz, caso seja avaliado varios imóveis de uma vez) e o modelo irá retornar o valor estimado para o(s) imóvel, assim poderão comparar o valor estimado pelo modelo com o real valor pedido pelo imóvel e estimar se é uma boa oportunidade de negócio.
- 
+
+## Vantagens e Desvantagens
+### Vantagens
+Basicamente, modelos de precificação economizam tempo, dinheiro e esforço. Eles podem fazer vários cálculos e comparações em segundos e não precisam sair fisicamente para ver uma propriedade ou propriedades semelhantes. Tudo isso reduz o custo de avaliar uma propriedade ou várias propriedades. Além de serem mais baratos e mais rápidos, os algoritmos não estão sujeitos a erro humano – ou má conduta. Como são autômatos, eles removem o preconceito e a subjetividade da equação. Portanto, há menos risco de fraude ou erro deliberado.
+
+### Desvantagens
+Para um modelo de precificação funcionar bem, ele precisa de dados de alta qualidade em quantidade suficiente para ser representativo. É aí que reside sua vulnerabilidade.
+Caso haja escassez de imóveis comparáveis ou dados registrados também podemos ter um problema. Por esta razão, propriedades recém-construídas são especialmente difíceis de avaliar.
+E por fim, um modelo de precificação só pode trabalhar com os dados que lhe são fornecidos, e há sempre o perigo de os dados serem inseridos incorretamente. Além disso, as informações que ele possui podem não estar atualizadas, tornando-o não confiável em mercados imobiliários em rápida mudança.
+
+
 ## Sobre o Modelo
  
 ### Tipo de Modelo
@@ -76,31 +85,42 @@ Foram treinados e testados em validação cruzada 4 modelos diferentes.
 A melhor performance com menor sobreajuste foi o algorítimo de Gradient Boosting. Com uma performance em validação cruzada de:
 - R2: 0.80
 - Mape: 0.14
-- RMSE: 84352.96
+- RMSE: 85146.28
 
 ## Otimização de Hiperparâmetros
 Usando o Randomized Search que consiste em uma busca aleatória para identificar o melhor grupo de parâmetros em um conjunto. Com isso conseguimos melhorar um pouco a performance do modelo.
-- R2: 0.82
+- R2: 0.81
 - Mape: 0.13
-- RMSE: 81635.04
+- RMSE: 82380.62
 
 ## Avaliação Final
 
 Finalmente, agora para avaliar a capacidade de generalização do modelo, vamos utiliza-lo nos dados de teste que deixamos separados. Sua perfomance foi de:
-- R2: 0.81
+- R2: 0.82
 - Mape: 0.13
-- RMSE: 81677.04
+- RMSE: 80079.49
 
 Temos praticamente a mesma performance que obtivemos nos dados de treino e na validação cruzada, isto significa que nosso modelo está generalizando muito bem, com pouco ou nenhum sobreajuste.
 
 ## Deploy em Produção
+Para disponilizar o modelo foi utilizado o app Streamlit, que nos possibilita a criação de um web app para fornecer as previsões. O modelo pode ser acessado e utilizado através do link abaixo:
+
+<https://share.streamlit.io/leorviana/house_rocket_regression/main/handler.py>
 
 ## Riscos Assumidos
+1. Removi todos os outliers, com isso posso ter pedido informações significantes, vale realizar uma análise somente desses dados posteriormente.
+2. Algumas variáveis estão bem desbalanceadas, como "waterfront" e "view", talvez se aplicarmos um método de sobreamostragem o modelo poderia performar bem melhor.
+3. Ao construir um modelo de regressão é importante que a variável resposta e as variáveis explicativas estejam em uma distribuição normal para melhor performance do modelo, mas nesta primeira iteração do projeto eu não transformei a distribuição e isso pode ter afetado o desempenho de alguma maneira.
 
 # Performance de Negócio
+
 
 # Conclusão
 
 # Próximos Passos
+1. Coletar mais dados, mais em quantidade e mais atibutos, para aumentar a acertibilidade do modelo.
+2. Realizar uma segunda iteração deste projeto, mas desta vez balanceando algumas variáveis, transformando a distribuição e testar modelos mais complexos.
 
 # Referências
+Blog “Seja um DataScientist - Meigarom”. Disponível em: <https://sejaumdatascientist.com/>.
+ "Machine Learning Canvas", ownml. Disponível em: <https://www.ownml.co/machine-learning-canvas>.
