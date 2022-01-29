@@ -123,4 +123,7 @@ Para disponilizar o modelo foi utilizado o app Streamlit, que nos possibilita a 
 
 # Referências
 Blog “Seja um DataScientist - Meigarom”. Disponível em: <https://sejaumdatascientist.com/>.
- "Machine Learning Canvas", ownml. Disponível em: <https://www.ownml.co/machine-learning-canvas>.
+
+"Machine Learning Canvas". **ownml**. Disponível em: <https://www.ownml.co/machine-learning-canvas>.
+ 
+HAYES, ADAM. "Automated Valuation Model".**investopedia**. Disponível em: <https://www.investopedia.com/terms/a/automated-valuation-model.asp>.
