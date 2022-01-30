@@ -6,6 +6,10 @@ Sua principal estratégia é comprar boas casas em ótimas localizações com pr
   <img src="https://imgix.cosmicjs.com/b8301210-f45f-11ea-8507-71ed316973d3-How-to-Find-Out-How-Much-a-House-Sold-For.png">
 </p>
 
+**Este é o segundo ciclo do projeto imoveis_house_rocket**
+
+**Primeiro Ciclo:** <https://github.com/leorviana/imoveis_house_rocket>.
+
 # Problema de Negócio
 A empresa obteve bons retornos com a estratégia anterior de comprar apartamentos que estivessem sendo vendidos a um valor abaixo da média da sua região. Mas o CEO da House Rocket gostaria de maximizar ainda mais os lucros.
 
@@ -66,7 +70,7 @@ Para identificar os outliers, utilizei o conceito de limite inferior e limite su
 ## Selecão de Variáveis
 Após olhar para a correlação entre as variáveis, foram selecionadas 8.
 <p align="left">
-  <img src="">
+  <img src="https://github.com/leorviana/house_rocket_regression/tree/main/images/corr.png">
 </p>
 
 ## Normalizando as variáveis
@@ -113,9 +117,11 @@ Para disponilizar o modelo foi utilizado o app Streamlit, que nos possibilita a 
 3. Ao construir um modelo de regressão é importante que a variável resposta e as variáveis explicativas estejam em uma distribuição normal para melhor performance do modelo, mas nesta primeira iteração do projeto eu não transformei a distribuição e isso pode ter afetado o desempenho de alguma maneira.
 
 # Performance de Negócio
-
+Com esta estratégia de utilizar um modelo de precificação para a escolha dos melhores imóveis a empresa irá faturar aproximadamente $1,207,273,175.81.
+Um aumento de $58,036,210.00 comparado com a estratégia anterior de olhar para a média por localidade.
 
 # Conclusão
+Utilizando o modelo de precificação desenvolvido conseguimos elevar o lucro da empresa em 5% comparado com a estratégia anterior.
 
 # Próximos Passos
 1. Coletar mais dados, mais em quantidade e mais atibutos, para aumentar a acertibilidade do modelo.
