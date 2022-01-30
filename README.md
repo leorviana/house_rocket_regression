@@ -70,7 +70,7 @@ Para identificar os outliers, utilizei o conceito de limite inferior e limite su
 ## Selecão de Variáveis
 Após olhar para a correlação entre as variáveis, foram selecionadas 8.
 <p align="left">
-  <img src="https://github.com/leorviana/house_rocket_regression/tree/main/images/corr.png">
+  <img src="https://github.com/leorviana/house_rocket_regression/blob/main/images/corr.png">
 </p>
 
 ## Normalizando as variáveis
