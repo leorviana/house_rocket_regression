@@ -117,8 +117,8 @@ Para disponilizar o modelo foi utilizado o app Streamlit, que nos possibilita a 
 3. Ao construir um modelo de regressão é importante que a variável resposta e as variáveis explicativas estejam em uma distribuição normal para melhor performance do modelo, mas nesta primeira iteração do projeto eu não transformei a distribuição e isso pode ter afetado o desempenho de alguma maneira.
 
 # Performance de Negócio
-Com esta estratégia de utilizar um modelo de precificação para a escolha dos melhores imóveis a empresa irá faturar aproximadamente $1,207,273,175.81.
-Um aumento de $58,036,210.00 comparado com a estratégia anterior de olhar para a média por localidade.
+Com esta estratégia de utilizar um modelo de precificação para a escolha dos melhores imóveis a empresa irá faturar aproximadamente $1,654,681,700.24.
+Um aumento de $505,444,735.00(43% de aumento) comparado com a estratégia anterior de olhar para a média por localidade.
 
 # Conclusão
 Utilizando o modelo de precificação desenvolvido conseguimos elevar o lucro da empresa em 5% comparado com a estratégia anterior.
