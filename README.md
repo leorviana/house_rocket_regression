@@ -121,7 +121,7 @@ Com esta estratégia de utilizar um modelo de precificação para a escolha dos 
 Um aumento de $505,444,735.00(43% de aumento) comparado com a estratégia anterior de olhar para a média por localidade.
 
 # Conclusão
-Utilizando o modelo de precificação desenvolvido conseguimos elevar o lucro da empresa em 5% comparado com a estratégia anterior.
+Utilizando o modelo de precificação desenvolvido conseguimos elevar o lucro da empresa em 43% comparado com a estratégia anterior, além disso agora conhecemos um pouco mais sobre como o preço da casa varia de acordo com cada caracteristica.
 
 # Próximos Passos
 1. Coletar mais dados, mais em quantidade e mais atibutos, para aumentar a acertibilidade do modelo.
