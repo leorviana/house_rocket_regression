@@ -59,13 +59,10 @@ Os dados disponíveis estãp em um arquivo csv disponibilizado pela empresa.
 - Latitude
 - Ft² médio do interior dos 15 imóveis vizinhos
 
-### Manutenção
-O modelo deverá ser treinado a cada 15 dias com novos dados, para assim acompanhar as mudanças no mercado e não perder sua acertibilidade.
-
 # Modelagem
 
 ## Outliers
-Para identificar os outliers, utilizei o conceito de limite inferior e limite superior aplicado por gráficos de caixa(boxplot). Decidi ser um pouco agressivo e remover todos os outliers, pois haviam muitos extremos, interferindo de maneira grave na distribuição da variável resposta.
+Para identificar os outliers, utilizei o conceito de limite inferior e limite superior aplicado por gráficos de caixa (boxplot). Decidi ser um pouco agressivo e remover todos os outliers, pois haviam muitos extremos, interferindo de maneira grave na distribuição da variável resposta.
 
 ## Selecão de Variáveis
 Após olhar para a correlação entre as variáveis, foram selecionadas 8.
